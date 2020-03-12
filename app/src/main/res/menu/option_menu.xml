@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/option">
+        <item
+            android:id="@+id/export_clipboard"
+            android:icon="@drawable/ic_upload"
+            android:title="@string/export_clipboard" />
+        <item
+            android:id="@+id/export_sdcard"
+            android:icon="@drawable/ic_upload"
+            android:title="@string/export_sdcard" />
+        <item
+            android:id="@+id/import_clipboard"
+            android:icon="@drawable/ic_import"
+            android:title="@string/import_clipboard" />
+        <item
+            android:id="@+id/import_sdcard"
+            android:icon="@drawable/ic_import"
+            android:title="@string/import_sdcard" />
+    </group>
+
+</menu>

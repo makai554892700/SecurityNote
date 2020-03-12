@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_100dp"
+    app:cardBackgroundColor="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_20dp"
+            android:maxLines="1"
+            android:text="测试标题"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_50dp"
+            android:layout_below="@id/title"
+            android:layout_marginTop="5dp"
+            android:ellipsize="middle"
+            android:maxLength="50"
+            android:maxLines="2"
+            android:text="测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_20dp"
+            android:layout_below="@id/text"
+            android:gravity="end"
+            android:maxLines="1"
+            android:text="测试时间"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

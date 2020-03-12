@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/Widget.Design.AppBarLayout"
+    app:elevation="@dimen/size_50dp">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/Widget.AppCompat.PopupMenu.Overflow">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/appbar_left"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:scaleType="center"
+                android:src="@drawable/ic_menu" />
+
+            <TextView
+                android:id="@+id/appbar_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:text="标题"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/appbar_right"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="center" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+</com.google.android.material.appbar.AppBarLayout>

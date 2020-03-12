@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">本地安全笔记</string>
+
+    <string name="security_title">安全提醒</string>
+    <string name="security_message">安全码已生成，点击确认以保存至粘贴板，点击取消忽略，安全码用于导出的数据恢复时使用，请及时保存。更多信息请打开左上角菜单栏点击更多了解。</string>
+    <string name="sure">确认</string>
+    <string name="success">成功</string>
+    <string name="cancel">取消</string>
+    <string name="save_ed">已复制至粘贴板，请及时保存.</string>
+
+    <string name="nav_more">更多</string>
+    <string name="nav_security_code">安全码</string>
+    <string name="security_code_random">当前随机安全码并未保存，如需保存请点击保存按钮。</string>
+    <string name="security_code_empty">安全码不可为空</string>
+
+    <string name="about">\n
+        <strong>1.什么是安全码？有什么用处？</strong>\n
+        \t\t安全码可以理解为数据密码，是用于加密导入导出数据时使用的密码。\n
+        <strong>2.在哪里查看或修改安全码？</strong>\n
+        \t\t在左侧边栏有个安全码的选项，点击后打开即可查看或修改安全码。\n
+    </string>
+
+    <string name="text">文 本</string>
+    <string name="address">地 址</string>
+    <string name="receipt">抬 头</string>
+    <string name="bank_card">银行卡</string>
+    <string name="credit_card">信用卡</string>
+
+    <string name="demo_title">示例标题</string>
+    <string name="demo_text">示例内容</string>
+
+    <string name="address_name">联系人姓名</string>
+    <string name="address_phone">联系人号码</string>
+    <string name="address_address">地址</string>
+    <string name="address_zip_code">邮编</string>
+
+    <string name="receipt_name">公司名称</string>
+    <string name="receipt_number">公司三证合一</string>
+    <string name="receipt_phone">公司电话</string>
+
+    <string name="bank_card_bank_name">银行名称</string>
+    <string name="bank_card_number">银行卡号</string>
+    <string name="bank_card_name">用户名</string>
+    <string name="bank_card_pass">银行卡密码</string>
+    <string name="bank_card_branch">支行</string>
+    <string name="bank_card_phone">手机号码</string>
+    <string name="bank_card_zip_code">邮编</string>
+    <string name="bank_card_swift_code">SwiftCode</string>
+    <string name="bank_card_cnaps">CNAPS</string>
+
+    <string name="credit_card_name">银行名称</string>
+    <string name="credit_card_user_name">用户名称</string>
+    <string name="credit_card_number">信用卡号</string>
+    <string name="credit_card_year">到期年</string>
+    <string name="credit_card_month">到期月</string>
+    <string name="credit_card_security_code">后三位</string>
+    <string name="credit_card_phone">手机号码</string>
+    <string name="credit_card_branch">支行</string>
+
+    <string name="export_clipboard">导出到粘贴板</string>
+    <string name="export_sdcard">导出到security_note目录</string>
+    <string name="import_clipboard">粘贴板导入</string>
+    <string name="import_sdcard">从文件导入</string>
+    <string name="export_success">导出成功</string>
+    <string name="import_success">导入成功</string>
+    <string name="export_error">导出失败</string>
+    <string name="import_error">导入失败</string>
+    <string name="import_failed">没有数据更新</string>
+    <string name="import_failed2">安全码错误或者导入的数据没有内容，详情请打开更多查看。</string>
+
+    <string name="choose_file">选择文件</string>
+    <string name="not_choose_file">没有选择文件</string>
+
+    <string name="not_save">直接退出将不保存</string>
+    <string name="save_empty">空数据将不保存</string>
+
+</resources>

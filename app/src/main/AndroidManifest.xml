@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="www.mys.com.security.node">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.mys.com"
+                    android:pathPrefix="/SecurityNode"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.TextActivity" />
+        <activity android:name=".activity.AddressActivity" />
+        <activity android:name=".activity.BankCardActivity" />
+        <activity android:name=".activity.CreditCardActivity" />
+        <activity android:name=".activity.ReceiptActivity" />
+        <activity android:name=".activity.AboutActivity" />
+        <activity android:name=".activity.SecurityCodeActivity" />
+    </application>
+
+</manifest>

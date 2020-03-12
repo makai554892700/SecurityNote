@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/toolbar" />
+
+    <EditText
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/appbar"
+        android:layout_marginLeft="@dimen/size_10dp"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:layout_marginRight="@dimen/size_10dp"
+        android:background="@null"
+        android:gravity="start|top"
+        android:text="@string/demo_title"
+        android:textSize="20sp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/text_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_10dp"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:layout_marginEnd="@dimen/size_10dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/receipt_name" />
+
+                <EditText
+                    android:id="@+id/receipt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_10dp"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:layout_marginEnd="@dimen/size_10dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/receipt_number" />
+
+                <EditText
+                    android:id="@+id/receipt_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_10dp"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:layout_marginEnd="@dimen/size_10dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/receipt_phone" />
+
+                <EditText
+                    android:id="@+id/receipt_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/action_save"
+        style="@style/Widget.Design.FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/size_20dp"
+        android:layout_marginRight="@dimen/size_20dp"
+        android:layout_marginBottom="@dimen/size_20dp"
+        android:src="@drawable/ic_save"
+        android:theme="@style/Theme.MaterialComponents"
+        app:backgroundTint="@color/white"
+        app:icon="@drawable/ic_save"
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior" />
+
+
+    <include
+        layout="@layout/common_loading"
+        android:visibility="gone" />
+
+</RelativeLayout>
