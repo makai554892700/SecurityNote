@@ -3,7 +3,10 @@ package www.mys.com.security.node.base;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.mayousheng.www.initview.ViewDesc;
@@ -14,6 +17,8 @@ import www.mys.com.security.node.utils.DataUtils;
 
 public abstract class BaseNoteActivity extends BaseAppbarLoadingActivity {
 
+    @ViewDesc(viewId = R.id.text_title)
+    public EditText textTitle;
     @ViewDesc(viewId = R.id.action_save)
     public FloatingActionButton saveButton;
     public BaseRealNode currentData;

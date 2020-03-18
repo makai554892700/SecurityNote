@@ -20,6 +20,9 @@
         \t\t在左侧边栏有个安全码的选项，点击后打开即可查看或修改安全码。\n
     </string>
 
+    <string name="system_error">系统错误</string>
+    <string name="empty_text">内容为空</string>
+
     <string name="text">文 本</string>
     <string name="address">地 址</string>
     <string name="receipt">抬 头</string>
@@ -28,6 +31,7 @@
 
     <string name="demo_title">示例标题</string>
     <string name="demo_text">示例内容</string>
+    <string name="demo_time">2019/01/01 11:11:11</string>
 
     <string name="address_name">联系人姓名</string>
     <string name="address_phone">联系人号码</string>
@@ -73,5 +77,7 @@
 
     <string name="not_save">直接退出将不保存</string>
     <string name="save_empty">空数据将不保存</string>
+
+    <string name="save_ed2">已复制至粘贴板</string>
 
 </resources>

@@ -15,27 +15,26 @@ import www.mys.com.security.node.pojo.CreditCard;
 import www.mys.com.security.node.pojo.Receipt;
 import www.mys.com.security.node.utils.DataUtils;
 import www.mys.com.security.node.utils.StringUtils;
+import www.mys.com.security.node.view.ItemView;
 
 public class CreditCardActivity extends BaseNoteActivity {
 
-    @ViewDesc(viewId = R.id.text_title)
-    public EditText textTitle;
     @ViewDesc(viewId = R.id.credit_card_name)
-    public EditText creditCardName;
+    public ItemView creditCardName;
     @ViewDesc(viewId = R.id.credit_card_user_name)
-    public EditText creditCardUserName;
+    public ItemView creditCardUserName;
     @ViewDesc(viewId = R.id.credit_card_number)
-    public EditText creditCardNumber;
+    public ItemView creditCardNumber;
     @ViewDesc(viewId = R.id.credit_card_year)
-    public EditText creditCardYear;
+    public ItemView creditCardYear;
     @ViewDesc(viewId = R.id.credit_card_month)
-    public EditText creditCardMonth;
+    public ItemView creditCardMonth;
     @ViewDesc(viewId = R.id.credit_card_security_code)
-    public EditText creditCardSecurityCode;
+    public ItemView creditCardSecurityCode;
     @ViewDesc(viewId = R.id.credit_card_phone)
-    public EditText creditCardPhone;
+    public ItemView creditCardPhone;
     @ViewDesc(viewId = R.id.credit_card_branch)
-    public EditText creditCardBranch;
+    public ItemView creditCardBranch;
     private CreditCard realData;
 
     @Override

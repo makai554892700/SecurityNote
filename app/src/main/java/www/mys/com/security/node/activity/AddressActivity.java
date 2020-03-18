@@ -14,19 +14,18 @@ import www.mys.com.security.node.pojo.BaseRealNode;
 import www.mys.com.security.node.pojo.ContactAddress;
 import www.mys.com.security.node.utils.DataUtils;
 import www.mys.com.security.node.utils.StringUtils;
+import www.mys.com.security.node.view.ItemView;
 
 public class AddressActivity extends BaseNoteActivity {
 
-    @ViewDesc(viewId = R.id.text_title)
-    public EditText textTitle;
     @ViewDesc(viewId = R.id.address_name)
-    public EditText addressName;
+    public ItemView addressName;
     @ViewDesc(viewId = R.id.address_phone)
-    public EditText addressPhone;
+    public ItemView addressPhone;
     @ViewDesc(viewId = R.id.address_address)
-    public EditText address;
+    public ItemView address;
     @ViewDesc(viewId = R.id.address_zip_code)
-    public EditText addressZipCode;
+    public ItemView addressZipCode;
     private ContactAddress realData;
 
     @Override

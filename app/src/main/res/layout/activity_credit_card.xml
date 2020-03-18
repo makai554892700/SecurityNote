@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <include
         android:id="@+id/appbar"
@@ -11,12 +11,11 @@
     <EditText
         android:id="@+id/text_title"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="@dimen/size_50dp"
         android:layout_below="@id/appbar"
         android:layout_marginLeft="@dimen/size_10dp"
         android:layout_marginTop="@dimen/size_10dp"
         android:layout_marginRight="@dimen/size_10dp"
-        android:background="@null"
         android:gravity="start|top"
         android:text="@string/demo_title"
         android:textSize="20sp" />
@@ -31,189 +30,61 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
+            <www.mys.com.security.node.view.ItemView
+                android:id="@+id/credit_card_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/size_10dp"
-                android:layout_marginLeft="@dimen/size_10dp"
-                android:layout_marginTop="@dimen/size_10dp"
-                android:layout_marginEnd="@dimen/size_10dp"
-                android:layout_marginRight="@dimen/size_10dp"
-                android:orientation="horizontal">
+                app:item_src="@drawable/ic_copy"
+                app:item_title="@string/credit_card_name" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:text="@string/credit_card_name" />
-
-                <EditText
-                    android:id="@+id/credit_card_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </LinearLayout>
-
-            <LinearLayout
+            <www.mys.com.security.node.view.ItemView
+                android:id="@+id/credit_card_user_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/size_10dp"
-                android:layout_marginLeft="@dimen/size_10dp"
-                android:layout_marginTop="@dimen/size_10dp"
-                android:layout_marginEnd="@dimen/size_10dp"
-                android:layout_marginRight="@dimen/size_10dp"
-                android:orientation="horizontal">
+                app:item_src="@drawable/ic_copy"
+                app:item_title="@string/credit_card_user_name" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:text="@string/credit_card_user_name" />
-
-                <EditText
-                    android:id="@+id/credit_card_user_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </LinearLayout>
-
-            <LinearLayout
+            <www.mys.com.security.node.view.ItemView
+                android:id="@+id/credit_card_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/size_10dp"
-                android:layout_marginLeft="@dimen/size_10dp"
-                android:layout_marginTop="@dimen/size_10dp"
-                android:layout_marginEnd="@dimen/size_10dp"
-                android:layout_marginRight="@dimen/size_10dp"
-                android:orientation="horizontal">
+                app:item_src="@drawable/ic_copy"
+                app:item_title="@string/credit_card_number" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:text="@string/credit_card_number" />
-
-                <EditText
-                    android:id="@+id/credit_card_number"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </LinearLayout>
-
-            <LinearLayout
+            <www.mys.com.security.node.view.ItemView
+                android:id="@+id/credit_card_year"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/size_10dp"
-                android:layout_marginLeft="@dimen/size_10dp"
-                android:layout_marginTop="@dimen/size_10dp"
-                android:layout_marginEnd="@dimen/size_10dp"
-                android:layout_marginRight="@dimen/size_10dp"
-                android:orientation="horizontal">
+                app:item_src="@drawable/ic_copy"
+                app:item_title="@string/credit_card_year" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:text="@string/credit_card_year" />
-
-                <EditText
-                    android:id="@+id/credit_card_year"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </LinearLayout>
-
-            <LinearLayout
+            <www.mys.com.security.node.view.ItemView
+                android:id="@+id/credit_card_month"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/size_10dp"
-                android:layout_marginLeft="@dimen/size_10dp"
-                android:layout_marginTop="@dimen/size_10dp"
-                android:layout_marginEnd="@dimen/size_10dp"
-                android:layout_marginRight="@dimen/size_10dp"
-                android:orientation="horizontal">
+                app:item_src="@drawable/ic_copy"
+                app:item_title="@string/credit_card_month" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:text="@string/credit_card_month" />
-
-                <EditText
-                    android:id="@+id/credit_card_month"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </LinearLayout>
-
-            <LinearLayout
+            <www.mys.com.security.node.view.ItemView
+                android:id="@+id/credit_card_security_code"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/size_10dp"
-                android:layout_marginLeft="@dimen/size_10dp"
-                android:layout_marginTop="@dimen/size_10dp"
-                android:layout_marginEnd="@dimen/size_10dp"
-                android:layout_marginRight="@dimen/size_10dp"
-                android:orientation="horizontal">
+                app:item_src="@drawable/ic_copy"
+                app:item_title="@string/credit_card_security_code" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:text="@string/credit_card_security_code" />
-
-                <EditText
-                    android:id="@+id/credit_card_security_code"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </LinearLayout>
-
-            <LinearLayout
+            <www.mys.com.security.node.view.ItemView
+                android:id="@+id/credit_card_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/size_10dp"
-                android:layout_marginLeft="@dimen/size_10dp"
-                android:layout_marginTop="@dimen/size_10dp"
-                android:layout_marginEnd="@dimen/size_10dp"
-                android:layout_marginRight="@dimen/size_10dp"
-                android:orientation="horizontal">
+                app:item_src="@drawable/ic_copy"
+                app:item_title="@string/credit_card_phone" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:text="@string/credit_card_phone" />
-
-                <EditText
-                    android:id="@+id/credit_card_phone"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </LinearLayout>
-
-            <LinearLayout
+            <www.mys.com.security.node.view.ItemView
+                android:id="@+id/credit_card_branch"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/size_10dp"
-                android:layout_marginLeft="@dimen/size_10dp"
-                android:layout_marginTop="@dimen/size_10dp"
-                android:layout_marginEnd="@dimen/size_10dp"
-                android:layout_marginRight="@dimen/size_10dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:text="@string/credit_card_branch" />
-
-                <EditText
-                    android:id="@+id/credit_card_branch"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </LinearLayout>
+                app:item_src="@drawable/ic_copy"
+                app:item_title="@string/credit_card_branch" />
         </LinearLayout>
     </ScrollView>
 

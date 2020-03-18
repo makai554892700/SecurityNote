@@ -14,30 +14,28 @@ import www.mys.com.security.node.pojo.BankCard;
 import www.mys.com.security.node.pojo.BaseRealNode;
 import www.mys.com.security.node.utils.DataUtils;
 import www.mys.com.security.node.utils.StringUtils;
+import www.mys.com.security.node.view.ItemView;
 
 public class BankCardActivity extends BaseNoteActivity {
 
-
-    @ViewDesc(viewId = R.id.text_title)
-    public EditText textTitle;
     @ViewDesc(viewId = R.id.bank_card_bank_name)
-    public EditText bankCardBankName;
+    public ItemView bankCardBankName;
     @ViewDesc(viewId = R.id.bank_card_number)
-    public EditText bankCardNumber;
+    public ItemView bankCardNumber;
     @ViewDesc(viewId = R.id.bank_card_name)
-    public EditText bankCardName;
+    public ItemView bankCardName;
     @ViewDesc(viewId = R.id.bank_card_pass)
-    public EditText bankCardPass;
+    public ItemView bankCardPass;
     @ViewDesc(viewId = R.id.bank_card_branch)
-    public EditText bankCardBranch;
+    public ItemView bankCardBranch;
     @ViewDesc(viewId = R.id.bank_card_phone)
-    public EditText bankCardPhone;
+    public ItemView bankCardPhone;
     @ViewDesc(viewId = R.id.bank_card_zip_code)
-    public EditText bankCardZipCode;
+    public ItemView bankCardZipCode;
     @ViewDesc(viewId = R.id.bank_card_swift_code)
-    public EditText bankCardSwiftCode;
+    public ItemView bankCardSwiftCode;
     @ViewDesc(viewId = R.id.bank_card_cnaps)
-    public EditText bankCardCnaps;
+    public ItemView bankCardCnaps;
     private BankCard realData;
 
     @Override

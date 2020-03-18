@@ -13,9 +13,6 @@ import www.mys.com.security.node.pojo.BaseRealNode;
 
 public class TextHolder extends BaseNoteHolder<BaseRealNode> {
 
-    @ViewDesc(viewId = R.id.text)
-    public TextView text;
-
     public TextHolder(final Context context, View view) {
         super(context, view);
     }

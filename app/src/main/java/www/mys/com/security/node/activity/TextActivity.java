@@ -13,13 +13,12 @@ import www.mys.com.security.node.base.BaseNoteActivity;
 import www.mys.com.security.node.pojo.BaseRealNode;
 import www.mys.com.security.node.utils.DataUtils;
 import www.mys.com.security.node.utils.StringUtils;
+import www.mys.com.security.node.view.ItemView;
 
 public class TextActivity extends BaseNoteActivity {
 
-    @ViewDesc(viewId = R.id.text_title)
-    public EditText textTitle;
     @ViewDesc(viewId = R.id.text_text)
-    public EditText textText;
+    public ItemView textText;
 
     @Override
     public View.OnClickListener onSaveButtonClick() {

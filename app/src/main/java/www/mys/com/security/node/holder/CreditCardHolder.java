@@ -15,9 +15,6 @@ import www.mys.com.security.node.pojo.CreditCard;
 
 public class CreditCardHolder extends BaseNoteHolder<BaseRealNode> {
 
-    @ViewDesc(viewId = R.id.text)
-    public TextView text;
-
     public CreditCardHolder(final Context context, View view) {
         super(context, view);
     }

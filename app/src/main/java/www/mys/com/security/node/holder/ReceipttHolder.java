@@ -15,9 +15,6 @@ import www.mys.com.security.node.pojo.Receipt;
 
 public class ReceipttHolder extends BaseNoteHolder<BaseRealNode> {
 
-    @ViewDesc(viewId = R.id.text)
-    public TextView text;
-
     public ReceipttHolder(final Context context, View view) {
         super(context, view);
     }

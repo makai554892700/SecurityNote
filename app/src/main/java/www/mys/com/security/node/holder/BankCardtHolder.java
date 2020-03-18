@@ -14,9 +14,6 @@ import www.mys.com.security.node.pojo.BaseRealNode;
 
 public class BankCardtHolder extends BaseNoteHolder<BaseRealNode> {
 
-    @ViewDesc(viewId = R.id.text)
-    public TextView text;
-
     public BankCardtHolder(final Context context, View view) {
         super(context, view);
     }

@@ -14,17 +14,16 @@ import www.mys.com.security.node.pojo.BaseRealNode;
 import www.mys.com.security.node.pojo.Receipt;
 import www.mys.com.security.node.utils.DataUtils;
 import www.mys.com.security.node.utils.StringUtils;
+import www.mys.com.security.node.view.ItemView;
 
 public class ReceiptActivity extends BaseNoteActivity {
 
-    @ViewDesc(viewId = R.id.text_title)
-    public EditText textTitle;
     @ViewDesc(viewId = R.id.receipt_name)
-    public EditText receiptName;
+    public ItemView receiptName;
     @ViewDesc(viewId = R.id.receipt_number)
-    public EditText receiptNumber;
+    public ItemView receiptNumber;
     @ViewDesc(viewId = R.id.receipt_phone)
-    public EditText receiptPhone;
+    public ItemView receiptPhone;
     private Receipt realData;
 
     @Override
