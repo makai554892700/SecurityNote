@@ -63,11 +63,11 @@ public class BankCardActivity extends BaseNoteActivity {
         if (!StringUtils.isEmpty(realData.phone)) {
             bankCardPhone.setText(realData.phone);
         }
-        if (!StringUtils.isEmpty(realData.swiftCode)) {
-            bankCardZipCode.setText(realData.swiftCode);
+        if (!StringUtils.isEmpty(realData.zipCode)) {
+            bankCardZipCode.setText(realData.zipCode);
         }
-        if (!StringUtils.isEmpty(realData.number)) {
-            bankCardSwiftCode.setText(realData.number);
+        if (!StringUtils.isEmpty(realData.swiftCode)) {
+            bankCardSwiftCode.setText(realData.swiftCode);
         }
         if (!StringUtils.isEmpty(realData.CNAPS)) {
             bankCardCnaps.setText(realData.CNAPS);
